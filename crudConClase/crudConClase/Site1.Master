@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="crudConClase.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>CRUD</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bg-light">
+    <form id="form1" runat="server">
+        <div class="container">
+            <h3 class="display-3 text-center text-primary">
+                CRUD - ASP - BOOTSTRAP - JS
+            </h3>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <asp:HyperLink ID="HyperLink1" class="nav-link" runat="server" NavigateUrl="~/index.aspx">Home</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink ID="HyperLink2" class="nav-link" runat="server" NavigateUrl="~/altas.aspx">Altas</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink ID="HyperLink3" class="nav-link" runat="server" NavigateUrl="~/bajas.aspx">Bajas</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink ID="HyperLink4" class="nav-link" runat="server" NavigateUrl="~/modificaciones.aspx">Modificaciones</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink ID="HyperLink5" class="nav-link" runat="server" NavigateUrl="~/consultas.aspx">Consultas</asp:HyperLink>
+                        </li>
+                    </ul>
+  </div>
+</nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
